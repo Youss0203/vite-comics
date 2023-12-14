@@ -12,8 +12,10 @@ export default {
     @use "../style/partials/minxins.scss" as*;
 
     section.hero{
-        height:400px;
+        height:471px;
         background-image: url(../assets/img/footer-bg.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
 
     section.social{
