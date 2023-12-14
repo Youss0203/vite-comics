@@ -8,3 +8,19 @@
 header{
     @include flex(row,space-between,center)
 }
+
+article.content-here{
+    @include flex(row,start,center)
+}
+
+div.main-content{
+    @include flex(row,start,center)
+}
+
+section.hero{
+    @include flex(row,space-between,center)
+}
+
+div.navigation{
+    @include flex(row,space-between,stretch)
+}
