@@ -1,0 +1,10 @@
+@use "./variables.scss" as*;
+@use "./minxins.scss" as*;
+
+*{
+    @include reset;
+}
+
+header{
+    @include flex(row,space-between,center)
+}
