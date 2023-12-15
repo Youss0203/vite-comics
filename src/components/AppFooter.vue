@@ -90,7 +90,7 @@ section.hero {
 }
 
 section.social {
-    padding:2rem;
+    padding:2.1rem;
     background-color: #303030;
 
 }
