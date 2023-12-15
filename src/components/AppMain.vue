@@ -1,10 +1,12 @@
 <template lang="">
 
     <div >
-
         <img class="jumbo" src="../assets/img/jumbotron.jpg" alt="">
     </div>
     <div class="container">
+        <div class=" w-70">
+            <button class="current">CURRENT SERIES</button>
+        </div>
         <div class="w-70">
             <article v-for="list in comicList" :imageSrc="list.thumb" :title="list.series">
             <img :src="list.thumb" alt="">
@@ -108,7 +110,7 @@ export default {
 article{
     width: calc((100% / 6) - .5rem);
     align-items: stretch;
-    margin-bottom:3rem;
+    margin-bottom:1rem;
     margin-right:.25rem;
     margin-left: .25rem;
 
@@ -133,13 +135,14 @@ article{
 
 div.container{
     background-color: black;
+    position:relative;
 
     .w-70{
         width: 70%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        padding:2rem;
+        padding:1rem;
     }
 }
 p{
@@ -165,5 +168,9 @@ button{
     align-items: center;
     
 
+}
+.current{
+    position: absolute;
+    top: -15px;
 }
 </style>
