@@ -10,8 +10,9 @@
             <img :src="list.thumb" alt="">
             <p>{{list.series}}</p>
         </article>
-        
-    
+        </div>
+        <div class="btn">
+        <button>LOAD MORE</button>
         </div>
     </div>
 
@@ -145,8 +146,24 @@ p{
     color:white;
     text-align:center;
     text-transform: uppercase;
-    font-size:.5rem;
+    font-size:.7rem;
 }
 img{width: 100%;
 height: 200px;}
+
+button{
+    padding:.5rem 2rem;
+    background-color: #027FF0;
+    border:none;
+    color:white;
+    margin-bottom:2rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
 </style>
